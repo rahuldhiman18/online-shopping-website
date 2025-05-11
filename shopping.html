@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QAF - Premium Fashion Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="shopping.css">
+</head>
+<body>
+    <!-- Top Notification Bar -->
+    <div class="top-notification">
+        <p>Safe Up to 50% Biggest Discounts. Hurry Limited Period Offer Shop Now</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">QAF</h1>
+            <ul class="nav-links">
+                <li><a href="#" class="active" data-section="home">Home</a></li>
+                <li><a href="#" data-section="men">Men</a></li>
+                <li><a href="#" data-section="women">Women</a></li>
+                <li><a href="#" data-section="baby">Baby Collection</a></li>
+                <li><a href="#" data-section="premium">Premium</a></li>
+                <li><a href="#" data-section="brands">Shop by Brand</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#" class="cart-btn"><i class="fas fa-shopping-bag"></i> <span class="cart-count">0</span></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Minimal Menz Style</h2>
+                <p>Consectetur adipiscing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos facilis neque nulla eorum.</p>
+                <a href="#" class="btn" data-section="men">SHOP NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Navigation -->
+    <section class="category-nav">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="featured">Featured</button>
+                <button class="tab-btn" data-category="new">New Arrivals</button>
+                <button class="tab-btn" data-category="bestsellers">Bestsellers</button>
+                <button class="tab-btn" data-category="discounted">Discounted</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Categories Section -->
+    <section class="main-categories">
+        <div class="container">
+            <div class="category-grid">
+                <div class="category-card men" data-section="men">
+                    <div class="category-content">
+                        <h3>Men's Fashion</h3>
+                        <a href="#" class="btn">Shop Now</a>
+                    </div>
+                </div>
+                <div class="category-card women" data-section="women">
+                    <div class="category-content">
+                        <h3>Women's Fashion</h3>
+                        <a href="#" class="btn">Shop Now</a>
+                    </div>
+                </div>
+                <div class="category-card baby" data-section="baby">
+                    <div class="category-content">
+                        <h3>Baby Fashion</h3>
+                        <a href="#" class="btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Collection Banner -->
+    <section class="premium-banner" data-section="premium">
+        <div class="container">
+            <div class="banner-content">
+                <h2>Premium Collection</h2>
+                <p>Exclusive luxury items for the discerning shopper</p>
+                <a href="#" class="btn">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Showcase -->
+    <section class="brands-section">
+        <div class="container">
+            <h2 class="section-title">Shop by Brand</h2>
+            <div class="brand-grid">
+                <div class="brand-card" data-brand="nike">
+                    <img src="nike logo.png" alt="Nike">
+                </div>
+                <div class="brand-card" data-brand="adidas">
+                    <img src="addidas logo.png" alt="Adidas">
+                </div>
+                <div class="brand-card" data-brand="Puma">
+                    <img src="puma logo.png" alt="Gucci">
+                </div>
+                <div class="brand-card" data-brand="Zara">
+                    <img src="zara logo.png" alt="Prada">
+                </div>
+                <div class="brand-card" data-brand="H&M">
+                    <img src="h&m logo.png" alt="Zara">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-grid">
+                <!-- Products will be loaded via JavaScript based on category -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get updates on new arrivals and special offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart and Notification Elements -->
+    <div class="cart-notification">
+        <p>Item added to cart!</p>
+    </div>
+
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be loaded here -->
+        </div>
+        <div class="cart-footer">
+            <p class="cart-total">Total: $0.00</p>
+            <a href="#" class="btn checkout-btn">Checkout</a>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <script src="shopping.js"></script>
+</body>
+</html>
